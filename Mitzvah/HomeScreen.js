@@ -4,12 +4,11 @@ import { ScrollView, View, Text, StyleSheet } from 'react-native';
 
 import Item from "./Item.js";
 const HomeScreen = () => {
-  const items = [
-    { id: 1, title: 'Item 1', description: 'Description for Item 1' },
-    { id: 2, title: 'Item 2', description: 'Description for Item 2' },
-    { id: 3, title: 'Item 3', description: 'Description for Item 3' },
-    // Add more items here
-  ];
+  let items = []
+  for (let i = 0; i < 20; i++) {
+    items.push( { id: i, title: 'Item '+i, description: 'Description for Item '+i })
+  }
+
   return (
     <ScrollView contentContainerStyle={styles.container}>
   {items.map((item) => (
