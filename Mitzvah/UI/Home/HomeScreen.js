@@ -2,7 +2,7 @@
 import React from 'react';
 import { ScrollView, View, Text, StyleSheet } from 'react-native';
 
-import Item from "./Item.js";
+import Item from "../../Item.js";
 const HomeScreen = () => {
   let items = []
   for (let i = 0; i < 20; i++) {
