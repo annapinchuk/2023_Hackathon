@@ -3,11 +3,10 @@ import { View, Image, Text, StyleSheet } from 'react-native';
 
 const Item = ({ title, description, imageUrl }) => {
   return (
+    
     <View style={styles.container}>
       <Image
-        // source={require('./assets/logo1.png')}
-        source={ {uri:imageUrl}}  
-        // source={ {uri:'https://www.photo-art.co.il/wp-content/uploads/2015/09/BY1A4457.jpg'}}  
+        source={ {uri:imageUrl}}    
         style={styles.image}
         resizeMode="cover"
       />
