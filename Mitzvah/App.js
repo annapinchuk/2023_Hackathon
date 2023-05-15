@@ -8,6 +8,8 @@ import * as Updates from 'expo-updates'; //Used for reloading the app manually.
 
 
 import HomeScreen from './UI/Home/HomeScreen';
+import Login from './UI/LoginAndRegister/Login';
+import Signup from './UI/LoginAndRegister/Signup';
 import GiveMenu from './Requests';
 import Events from './Events';
 import Profile from './Profile';
@@ -38,8 +40,9 @@ const Tab = createMaterialBottomTabNavigator();
 //Read Material-bottom-tabs docs 
 
 const App = () => (
+
   <NavigationContainer>
-    <Tab.Navigator 
+    <Tab.Navigator
     activeColor='#392F5A'
     barStyle={{ backgroundColor: '#BDEDE0' }}
     >
