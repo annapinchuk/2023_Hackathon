@@ -37,7 +37,7 @@ let businessAccount = true;
 const Tab = createMaterialBottomTabNavigator();
 
 //Need to implement a login screen.
-//Read Material-bottom-tabs docs 
+//Read Material-bottom-tabs docs
 
 const App = () => (
 
@@ -48,8 +48,8 @@ const App = () => (
     >
       <Tab.Screen name="Home" component={HomeScreen} />
       <Tab.Screen name={businessAccount? "Requests" : "Request Menu"} component={businessAccount? GiveMenu : RequestMenu} />
-      <Tab.Screen name="Events" component={Events} />
-      <Tab.Screen name="Profile" component={Profile} />
+      <Tab.Screen name="Events" component={Login} />
+      <Tab.Screen name="Profile" component={Signup} />
     </Tab.Navigator>
   </NavigationContainer>
 );
