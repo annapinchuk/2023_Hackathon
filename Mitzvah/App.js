@@ -8,7 +8,7 @@ import * as Updates from 'expo-updates'; //Used for reloading the app manually.
 
 
 import HomeScreen from './UI/Home/HomeScreen';
-import GiveMenu from './GiveMenu';
+import GiveMenu from './Requests';
 import Events from './Events';
 import Profile from './Profile';
 import RequestMenu from './RequestMenu';
@@ -44,7 +44,7 @@ const App = () => (
     barStyle={{ backgroundColor: '#BDEDE0' }}
     >
       <Tab.Screen name="Home" component={HomeScreen} />
-      <Tab.Screen name={businessAccount? "Give Menu" : "Request Menu"} component={businessAccount? GiveMenu : RequestMenu} />
+      <Tab.Screen name={businessAccount? "Requests" : "Request Menu"} component={businessAccount? GiveMenu : RequestMenu} />
       <Tab.Screen name="Events" component={Events} />
       <Tab.Screen name="Profile" component={Profile} />
     </Tab.Navigator>

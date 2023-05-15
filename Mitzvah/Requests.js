@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import RequestList from './RequestList';
 
-const GiveMenu = () => (
+const Requests = () => (
   <View style={styles.container}>
     <Text>Give Menu</Text>
     <RequestList/>
@@ -18,4 +18,4 @@ const styles = StyleSheet.create({
     }
 });
 
-export default GiveMenu;
+export default Requests;
