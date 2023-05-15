@@ -8,7 +8,7 @@ import * as Updates from 'expo-updates'; //Used for reloading the app manually.
 
 
 import HomeScreen from './UI/Home/HomeScreen';
-import GiveMenu from './Requests';
+import GiveMenu from './UI/request/Requests';
 import Events from './Events';
 import Profile from './Profile';
 import RequestMenu from './RequestMenu';
