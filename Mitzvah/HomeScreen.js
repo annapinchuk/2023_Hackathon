@@ -6,18 +6,15 @@ import Item from "./Item.js";
 const HomeScreen = () => {
   let items = []
   for (let i = 0; i < 20; i++) {
-    items.push( { id: i, title: 'Item '+i, description: 'Description for Item '+i })
+    items.push( { id: i, title: 'Item '+i, description: 'Description for Item '+i,imageUrl:'https://www.photo-art.co.il/wp-content/uploads/2015/09/BY1A4457.jpg' })
   }
 
   return (
     <ScrollView contentContainerStyle={styles.container}>
   {items.map((item) => (
-    <Item title={item.title} description={item.description} />
-        
+    <Item title={item.title} description={item.description} imageUrl={item.imageUrl}/>
       ))}
-  
 </ScrollView>
-
   );
 };
 

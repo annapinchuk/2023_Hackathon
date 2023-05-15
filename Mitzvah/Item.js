@@ -1,11 +1,13 @@
 import React from 'react';
 import { View, Image, Text, StyleSheet } from 'react-native';
 
-const Item = ({ title, description }) => {
+const Item = ({ title, description, imageUrl }) => {
   return (
     <View style={styles.container}>
       <Image
-        source={require('./assets/logo1.png')}
+        // source={require('./assets/logo1.png')}
+        source={ {uri:imageUrl}}  
+        // source={ {uri:'https://www.photo-art.co.il/wp-content/uploads/2015/09/BY1A4457.jpg'}}  
         style={styles.image}
         resizeMode="cover"
       />

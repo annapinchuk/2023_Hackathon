@@ -1,9 +1,11 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
+import RequestList from './RequestList';
 
 const GiveMenu = () => (
   <View style={styles.container}>
     <Text>Give Menu</Text>
+    <RequestList/>
   </View>
 );
 
